@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rania Oulmidi — Élève Ingénieure IA & Data Science</title>
+<meta name="description" content="Portfolio de Rania Oulmidi, élève ingénieure en Intelligence Artificielle & Sciences des Données à l'EMSI Tanger.">
+<link rel="icon" type="image/png" href="assets/favicon.png"><text y=%22.9em%22 font-size=%2290%22 fill=%22%237df9ff%22>◆</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=10">
+</head>
+<body>
+
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-ring"></div>
+    <img class="loader-logo" src="assets/logo-ro.png" alt="RO" />
+  </div>
+</div>
+
+<canvas id="bg-canvas"></canvas>
+<div class="grain"></div>
+<div class="cursor-glow"></div>
+
+<header class="navbar" id="navbar">
+  <a href="#home" class="brand">
+    <span class="brand-mark"><img src="assets/logo-ro.png" alt="RO" /></span>
+    <span class="brand-name">Rania Oulmidi</span>
+  </a>
+  <nav class="nav-links" id="nav-links">
+    <a href="#home" data-nav>Accueil</a>
+    <a href="#about" data-nav>À propos</a>
+    <a href="#parcours" data-nav>Parcours</a>
+    <a href="#experience" data-nav>Expérience</a>
+    <a href="#projets" data-nav>Projets</a>
+    <a href="#competences" data-nav>Compétences</a>
+    <a href="#certifications" data-nav>Certifications</a>
+    <a href="#contact" data-nav class="nav-cta">Contact</a>
+  </nav>
+  <div class="lang-switch" role="group" aria-label="Language / Langue">
+    <button type="button" data-lang="fr">FR</button>
+    <button type="button" data-lang="en">EN</button>
+  </div>
+  <button class="burger" id="burger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <p class="hero-kicker" data-reveal>Portfolio · IA & Data Science</p>
+      <h1 class="hero-title" data-reveal>
+        <span class="line">Bonjour, je suis</span>
+        <span class="line hero-name">OULMIDI <span class="accent">RANIA</span></span>
+      </h1>
+      <p class="hero-role" data-reveal>
+        <span class="typed-text" id="typed"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-desc" data-reveal data-i18n="heroDesc">
+        Élève ingénieure en <strong>Intelligence Artificielle &amp; Science des Données</strong>, en 5<sup>e</sup> année à l'EMSI Tanger,
+        à la recherche d'un <strong>stage PFE de 6 mois dès janvier 2027</strong> en IA/Data, sur des sujets SAP SD/MM
+        afin d'approfondir mes compétences fonctionnelles, ou sur des projets combinant les deux.
+      </p>
+      <div class="hero-actions" data-reveal>
+        <a href="#projets" class="btn btn-primary">
+          <span>Voir mes projets</span>
+        </a>
+        <a href="assets/CV_Rania_Oulmidi.pdf" download class="btn btn-ghost">
+          <span>Télécharger le CV</span>
+        </a>
+      </div>
+      <div class="hero-socials" data-reveal>
+        <a href="https://www.linkedin.com/in/rania-oulmidi-ojd48" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.11 20.45H3.56V9h3.55v11.45z"/></svg>
+        </a>
+        <a href="https://github.com/rania48" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+        </a>
+        <a href="mailto:Rania.Oulmidi@emsi-edu.ma" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13zm2.2.5 7.8 6.2L19.8 6H4.2zM20 8.1l-7.4 5.9a1 1 0 0 1-1.2 0L4 8.1V18h16V8.1z"/></svg>
+        </a>
+        <a href="https://wa.me/212641897988" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2c-5.5 0-9.96 4.46-9.96 9.96 0 1.76.46 3.48 1.34 5L2 22l5.2-1.36a9.94 9.94 0 0 0 4.84 1.23h.01c5.5 0 9.96-4.45 9.96-9.95S17.54 2 12.04 2zm0 18.2a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.08.81.82-3-.2-.31a8.22 8.22 0 1 1 6.95 3.83zm4.5-6.13c-.25-.12-1.45-.72-1.67-.8-.22-.08-.39-.12-.55.12-.16.25-.63.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.48-1.39-1.73-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.55-1.33-.76-1.82-.2-.48-.4-.42-.55-.42h-.47c-.16 0-.43.06-.65.31-.22.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.45-.59 1.66-1.16.2-.57.2-1.06.14-1.16-.06-.1-.22-.16-.47-.28z"/></svg>
+        </a>
+        <a href="tel:+212641897988" aria-label="Appel">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.62 10.79a15.1 15.1 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.02-.24c1.12.37 2.33.57 3.57.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C10.4 21 3 13.6 3 4.5a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.57 3.57a1 1 0 0 1-.24 1.02l-2.2 2.2z"/></svg>
+        </a>
+      </div>
+      <p class="hero-phone-hint" data-reveal>Appel ou WhatsApp — au choix</p>
+    </div>
+
+    <div class="hero-visual">
+      <div class="orbit-frame" id="tilt-frame">
+        <div class="orbit-ring ring-1"></div>
+        <div class="orbit-ring ring-2"></div>
+        <div class="orbit-ring ring-3"></div>
+        <div class="photo-card">
+          <img src="assets/profile-cutout.jpg" alt="Rania Oulmidi" />
+        </div>
+        <span class="floating-chip chip-1">Python</span>
+        <span class="floating-chip chip-2">RAG · LLM</span>
+        <span class="floating-chip chip-3">SAP SD/MM</span>
+        <span class="floating-chip chip-4">Power BI</span>
+        <span class="floating-chip chip-5">Data Eng.</span>
+        <span class="floating-chip chip-6">SQL &amp; NoSQL</span>
+        <span class="floating-chip chip-7">Airflow · n8n · Kafka</span>
+        <span class="floating-chip chip-8">ETL/ELT</span>
+      </div>
+    </div>
+
+    <div class="scroll-cue">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="stats-strip" aria-label="Chiffres clés">
+    <div class="stat" data-count="5">
+      <span class="stat-num" data-target="5">0</span><span class="stat-suffix">e</span>
+      <p>Année ingénieur — EMSI Tanger</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="14">0</span><span class="stat-suffix">+</span>
+      <p>Certifications obtenues</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="3">0</span>
+      <p>Stages &amp; expériences pro</p>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="74">0</span><span class="stat-suffix">/100</span>
+      <p>EF SET Anglais — C2 Proficient</p>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">01 — À propos</span>
+      <h2>Qui suis-je ?</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-text" data-reveal data-i18n="aboutText">
+        Élève ingénieure spécialisée en <strong>Intelligence Artificielle &amp; Data Science</strong>, en 5<sup>e</sup> année
+        à l'<strong>EMSI Tanger</strong>. J'ai développé une expérience concrète en <strong>IA générative (RAG, LLM)</strong>,
+        en <strong>Data Engineering</strong> et en <strong>AMOA SAP Retail</strong>, à travers des stages et des projets académiques.
+        Curieuse et rigoureuse, j'aime concevoir des solutions intelligentes appliquées aux systèmes SAP et aux processus métiers.
+      </p>
+      <div class="about-cards" data-reveal>
+        <div class="mini-card">
+          <h4>🎓 Formation</h4>
+          <p>Ingénierie Informatique &amp; Réseaux — EMSI Tanger</p>
+        </div>
+        <div class="mini-card">
+          <h4>📍 Localisation</h4>
+          <p>Tanger, Maroc — Mobilité nationale et internationale</p>
+        </div>
+        <div class="mini-card">
+          <h4>🗣️ Langues</h4>
+          <p>Arabe (natale) · Français (bilingue) · Anglais (avancé, C2)</p>
+        </div>
+        <div class="mini-card">
+          <h4>🎯 Objectif</h4>
+          <p>Stage PFE 6 mois — dès Janvier 2027</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="activities" data-reveal>
+      <h3 class="activities-title">Engagements &amp; activités extra-scolaires</h3>
+      <div class="activity-list">
+
+        <div class="activity-item">
+          <img src="assets/emsi-logo.jpg" alt="EMSI" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Ambassadrice</h4>
+              <span class="activity-date">Depuis 2024</span>
+            </div>
+            <p class="activity-org">Career Center — EMSI Tanger</p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <img src="assets/emsi-logo.jpg" alt="EMSI Developer Student Club" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Membre</h4>
+              <span class="activity-date">Mai 2025 — Aujourd'hui · 1 an 5 mois</span>
+            </div>
+            <p class="activity-org">EMSI Developer Student Club</p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <img src="assets/enactus-logo.png" alt="ENACTUS" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Co-responsable du pôle Financement</h4>
+              <span class="activity-date">Oct. 2024 — Mars 2025 · 6 mois</span>
+            </div>
+            <p class="activity-org">ENACTUS EMSI Tanger</p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <img src="assets/enactus-logo.png" alt="ENACTUS" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Membre du pôle Étude et Analyse des Projets</h4>
+              <span class="activity-date">Janv. 2024 — Oct. 2024 · 10 mois</span>
+            </div>
+            <p class="activity-org">ENACTUS EMSI Tanger</p>
+            <p class="activity-desc">Recherche de projets innovants et développement de solutions durables.</p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <img src="assets/logos/natation-federation.png" alt="Fédération Royale Marocaine de Natation" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Compétitrice</h4>
+              <span class="activity-date">Janv. 2017 — Fév. 2020 · 3 ans 2 mois</span>
+            </div>
+            <p class="activity-org">Fédération Royale Marocaine de Natation — Oujda</p>
+            <p class="activity-desc">Compétitrice au MCO (Mouloudia Club d'Oujda), puis à l'USO (Union Sportive d'Oujda).</p>
+          </div>
+        </div>
+
+        <div class="activity-item">
+          <img src="assets/logos/aca-logo.png" alt="American Language Centers" class="activity-logo" />
+          <div class="activity-body">
+            <div class="activity-head">
+              <h4>Student</h4>
+              <span class="activity-date">Oct. 2015 — Juin 2020 · 4 ans 9 mois</span>
+            </div>
+            <p class="activity-org">American Language Centers (ACA) — Oujda</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PARCOURS / TIMELINE -->
+  <section id="parcours" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">02 — Parcours</span>
+      <h2>Formation</h2>
+    </div>
+    <div class="timeline">
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2024 — En cours</span>
+          <h3>Cycle Ingénieur — Ingénierie Informatique &amp; Réseaux</h3>
+          <p>École Marocaine des Sciences de l'Ingénieur (EMSI) — Tanger</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2022 — 2024</span>
+          <h3>Classes Préparatoires Intégrées</h3>
+          <p>École Marocaine des Sciences de l'Ingénieur (EMSI) — Tanger</p>
+        </div>
+      </div>
+      <div class="timeline-item" data-reveal>
+        <div class="timeline-dot"></div>
+        <div class="timeline-card">
+          <span class="timeline-date">2021 — 2022</span>
+          <h3>Baccalauréat Sciences Physiques, Option Français</h3>
+          <p>Lycée Mohammed VI — Oujda</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">03 — Expérience</span>
+      <h2>Expérience professionnelle</h2>
+    </div>
+    <div class="exp-grid">
+      <article class="exp-card tilt-card" data-reveal>
+        <div class="exp-top">
+          <div class="exp-title-wrap">
+            <img src="assets/ocp-logo.png" alt="Logo OCP" class="exp-logo" />
+            <h3>Stagiaire IA &amp; Data</h3>
+          </div>
+          <span class="exp-date">Juil. — Août 2026</span>
+        </div>
+        <p class="exp-company">OCP - Jorf Lasfar</p>
+        <p class="exp-project">Projet : NetResolve AI — Plateforme intelligente de gestion des incidents réseau</p>
+        <p class="exp-desc">
+          Conception d'une plateforme intelligente de résolution d'incidents basée sur une architecture RAG,
+          combinant recherche exacte dans PostgreSQL, recherche sémantique par embeddings avec ChromaDB et
+          génération de réponses via un LLM (Azure OpenAI). Orchestration avec Airflow d'un pipeline analytique
+          vers Snowflake, intégrant clustering HDBSCAN, KPI Power BI et reporting automatisé.
+        </p>
+        <div class="tag-row">
+          <span>Python</span><span>FastAPI</span><span>React.js</span><span>PostgreSQL</span><span>ChromaDB</span>
+          <span>Azure OpenAI</span><span>Airflow</span><span>Snowflake</span><span>Power BI</span><span>Docker</span>
+        </div>
+      </article>
+
+      <article class="exp-card tilt-card" data-reveal>
+        <div class="exp-top">
+          <div class="exp-title-wrap">
+            <img src="assets/winbey-logo.png" alt="Logo Winbey IT" class="exp-logo" />
+            <h3>Stagiaire Consultante AMOA SAP</h3>
+          </div>
+          <span class="exp-date">Août 2025</span>
+        </div>
+        <p class="exp-company">Winbey IT — France</p>
+        <p class="exp-project">Projet : Intégration POS → SAP — L'Oréal / AESOP Canada</p>
+        <p class="exp-desc">
+          Conception et validation des fichiers d'interfaces pour garantir une intégration cohérente des ventes,
+          paiements et mouvements de stock en consignation pour l'ouverture d'un point de vente AESOP au Canada.
+          Intégration des 4 flux de consignation (Fill-Up, Issue, Return, Pick-Up) dans SAP, qualification des
+          anomalies fonctionnelles et techniques, suivi des corrections et mises à jour.
+        </p>
+        <div class="tag-row">
+          <span>SAP</span><span>AMOA Retail</span><span>SD/MM</span><span>Analyse fonctionnelle</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projets" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">04 — Projets</span>
+      <h2>Projets académiques</h2>
+    </div>
+    <div class="project-grid">
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2026</span>
+        <h3>Analyse de Sentiment sur les Avis de Films — Text Mining &amp; NLP</h3>
+        <p>
+          Pipeline complet de text mining sur le dataset IMDB (50&nbsp;000 avis de films, classes positive/négative
+          parfaitement équilibrées), ramené à 49&nbsp;582 avis après nettoyage des doublons. Prétraitement NLP avec
+          NLTK (nettoyage, tokenisation, suppression des stopwords, stemming), puis comparaison de deux vectorisations
+          — Bag-of-Words et TF-IDF — réduites par LSI (SVD tronquée, 300 dimensions) et classifiées par régression
+          logistique. Le pipeline TF-IDF + LSI s'est révélé le plus performant, avec <strong>87,2&nbsp;% d'accuracy</strong>
+          et un F1-score de 87,4&nbsp;%.
+        </p>
+        <div class="tag-row">
+          <span>Python</span><span>Pandas</span><span>NLTK</span><span>Scikit-learn</span><span>TF-IDF</span>
+          <span>Bag-of-Words</span><span>LSI (SVD)</span><span>Régression logistique</span>
+          <span>Matplotlib / Seaborn</span><span>WordCloud</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2026</span>
+        <h3>Moteur de Matching IA &amp; Optimisation de la Recherche Sémantique</h3>
+        <p>
+          Plateforme de recrutement intelligente : matching sémantique CV/offres, classement des profils et
+          assistant conversationnel (RAG) pour accompagner le recruteur.
+        </p>
+        <div class="tag-row">
+          <span>FastAPI</span><span>PostgreSQL</span><span>pgvector</span><span>Ollama</span><span>RAG</span>
+          <span>React</span><span>TypeScript</span><span>Docker</span><span>ngrok</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2026</span>
+        <h3>Analyse distribuée de séquences ADN — MapReduce &amp; Machine Learning</h3>
+        <p>
+          Pipeline 100&nbsp;% MapReduce d'analyse de séquences ADN issues du Human Microbiome Project (HMP), sur un cluster
+          Hadoop HDFS : prétraitement FASTA, extraction de k-mers (k&nbsp;=&nbsp;5), vecteurs de fréquences, similarité cosinus,
+          alignement Smith-Waterman, puis K-Means itératif MapReduce. Les clusters obtenus correspondent aux sites corporels HMP.
+        </p>
+        <div class="tag-row">
+          <span>Hadoop HDFS</span><span>MapReduce (MRJob)</span><span>Hadoop Streaming</span><span>Python</span>
+          <span>Biopython</span><span>Scikit-learn</span><span>K-Means</span><span>Random Forest</span>
+          <span>Matplotlib / Seaborn</span><span>Docker Compose</span><span>GitHub</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2026</span>
+        <h3>Système décisionnel BI — Pilotage de la performance d'une école supérieure</h3>
+        <p>
+          Chaîne BI complète transformant un dataset scolaire simulé (27 fichiers CSV, ~21&nbsp;000 lignes) en un dashboard
+          Power BI de 10 pages : chargement dans Snowflake via un script Python, transformation avec dbt (RAW → STAGING → MARTS),
+          puis KPI en DAX (taux de réussite, satisfaction globale pondérée, taux de recouvrement, budget prévu vs exécuté…).
+        </p>
+        <div class="tag-row">
+          <span>Snowflake</span><span>dbt</span><span>Power BI</span><span>DAX</span><span>Python</span>
+          <span>Excel / CSV</span><span>GitHub</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2026</span>
+        <h3>Détection d'intrusions réseau (IDS) temps réel</h3>
+        <p data-i18n="idsDesc">
+          IDS intelligent en temps réel sur 3,1 millions de flux (CIC-IDS2017, 15 classes), combinant
+          Random Forest, XGBoost et CNN-BiLSTM-Transformer — <strong>99,84 % de précision</strong>.
+          Pipeline temps réel Kafka → Spark Structured Streaming → MongoDB → Streamlit, automatisant
+          l'ingestion, la classification et la visualisation des alertes de sécurité.
+        </p>
+        <div class="tag-row">
+          <span>Python</span><span>Scikit-learn</span><span>XGBoost</span><span>TensorFlow/Keras</span>
+          <span>Kafka</span><span>Spark Streaming</span><span>MongoDB</span><span>Streamlit</span><span>Docker</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2025</span>
+        <h3>Application mHealth — Suivi &amp; Gestion Patient</h3>
+        <p>
+          Application Android mHealth pour 4 profils utilisateurs (patient, médecin, secrétaire, admin),
+          centralisant dossiers médicaux, rendez-vous, messagerie patient–médecin et gestion des droits,
+          pour digitaliser le parcours de suivi patient.
+        </p>
+        <div class="tag-row">
+          <span>Android Studio</span><span>Java</span><span>XML</span><span>SQLite</span>
+        </div>
+      </article>
+
+      <article class="project-card tilt-card" data-reveal>
+        <div class="project-glow"></div>
+        <span class="project-year">2025</span>
+        <h3>EMSI Share Learn — Plateforme d'apprentissage</h3>
+        <p>
+          Plateforme multi-rôles intégrant partage de ressources, quiz, suivi des scores et gestion
+          des utilisateurs pour la communauté EMSI.
+        </p>
+        <div class="tag-row">
+          <span>Python</span><span>Django</span><span>PostgreSQL</span><span>React.js</span>
+          <span>TypeScript</span><span>Vite.js</span><span>Tailwind CSS</span><span>JWT</span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- COMPETENCES -->
+  <section id="competences" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">05 — Compétences</span>
+      <h2>Compétences techniques</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-block" data-reveal>
+        <h4>Langages</h4>
+        <div class="tag-row"><span>Python</span><span>Java</span></div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>Bases de données</h4>
+        <div class="tag-row">
+          <span>PostgreSQL</span><span>MySQL</span><span>SQL Server</span><span>MongoDB</span>
+          <span>Neo4j</span><span>Redis</span><span>ChromaDB</span>
+        </div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>ML / Deep Learning</h4>
+        <div class="tag-row">
+          <span>Pandas</span><span>NumPy</span><span>Matplotlib</span><span>Seaborn</span>
+          <span>Scikit-learn</span><span>PyTorch</span><span>TensorFlow</span><span>NLTK</span>
+        </div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>IA Générative</h4>
+        <div class="tag-row">
+          <span>Prompt Engineering</span><span>RAG</span><span>LLM</span><span>Azure OpenAI</span>
+        </div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>Data Engineering / Big Data</h4>
+        <div class="tag-row">
+          <span>ETL</span><span>Hadoop</span><span>Apache Airflow</span><span>Kafka</span><span>Airbyte</span>
+        </div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>BI / Reporting</h4>
+        <div class="tag-row"><span>Power BI</span></div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>DevOps &amp; Outils</h4>
+        <div class="tag-row">
+          <span>Docker</span><span>Azure</span><span>Git / GitHub</span><span>Linux</span>
+        </div>
+      </div>
+      <div class="skill-block" data-reveal>
+        <h4>Gestion de projet</h4>
+        <div class="tag-row">
+          <span>MS Project</span><span>Gantt</span><span>PERT</span><span>WBS</span><span>RACI</span><span>RBS</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="lang-bars" data-reveal>
+      <div class="lang-bar">
+        <div class="lang-bar-head"><span>Français</span><span>Bilingue</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="95"></div></div>
+      </div>
+      <div class="lang-bar">
+        <div class="lang-bar-head"><span>Anglais</span><span>Avancé — C2 Proficient (74/100)</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="88"></div></div>
+      </div>
+      <div class="lang-bar">
+        <div class="lang-bar-head"><span>Arabe</span><span>Langue maternelle</span></div>
+        <div class="bar-track"><div class="bar-fill" data-width="100"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">06 — Certifications</span>
+      <h2>Certifications &amp; formations</h2>
+    </div>
+    <div class="cert-grid" id="cert-grid">
+      <!-- injected by JS -->
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section contact-section">
+    <div class="section-head" data-reveal>
+      <span class="tag-label">07 — Contact</span>
+      <h2>Travaillons ensemble</h2>
+    </div>
+    <div class="contact-wrap" data-reveal>
+      <p class="contact-lead" data-i18n="contactLead">
+        À la recherche d'un <strong>stage PFE (6 mois, dès janvier 2027)</strong> en IA / Data Science,
+        SAP SD/MM, ou sur des projets combinant les deux. N'hésitez pas à me contacter.
+      </p>
+      <div class="contact-links">
+        <a class="contact-item" href="mailto:Rania.Oulmidi@emsi-edu.ma">
+          <span class="contact-icon">@</span>
+          <span>Rania.Oulmidi@emsi-edu.ma</span>
+        </a>
+        <a class="contact-item" href="tel:+212641897988">
+          <span class="contact-icon">☎</span>
+          <span>Appeler — +212 641-89-79-88</span>
+        </a>
+        <a class="contact-item" href="https://wa.me/212641897988" target="_blank" rel="noopener">
+          <span class="contact-icon">💬</span>
+          <span>WhatsApp — +212 641-89-79-88</span>
+        </a>
+        <a class="contact-item" href="https://www.linkedin.com/in/rania-oulmidi-ojd48" target="_blank" rel="noopener">
+          <span class="contact-icon">in</span>
+          <span>LinkedIn : Rania Oulmidi</span>
+        </a>
+        <a class="contact-item" href="https://github.com/rania48" target="_blank" rel="noopener">
+          <span class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.15-1.11-1.46-1.11-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.94 0-1.09.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.6 9.6 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.6 1.03 2.69 0 3.84-2.34 4.68-4.57 4.93.36.31.68.92.68 1.85v2.75c0 .27.18.58.69.48A10 10 0 0 0 12 2z"/></svg>
+          </span>
+          <span>GitHub : rania48</span>
+        </a>
+        <a class="contact-item" href="assets/CV_Rania_Oulmidi.pdf" download>
+          <span class="contact-icon">⬇</span>
+          <span>Télécharger mon CV</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Rania Oulmidi</p>
+</footer>
+
+<div class="cert-modal" id="cert-modal">
+  <div class="cert-modal-backdrop" id="cert-modal-backdrop"></div>
+  <div class="cert-modal-inner">
+    <button class="cert-modal-close" id="cert-modal-close" aria-label="Fermer">✕</button>
+    <img id="cert-modal-img" src="" alt="Certificat" />
+    <div class="cert-modal-caption">
+      <h4 id="cert-modal-title"></h4>
+      <p id="cert-modal-issuer"></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/vendor/three.min.js"></script>
+<script src="js/three-scene.js?v=3"></script>
+<script src="js/i18n.js?v=8"></script>
+<script src="js/main.js?v=4"></script>
+</body>
+</html>

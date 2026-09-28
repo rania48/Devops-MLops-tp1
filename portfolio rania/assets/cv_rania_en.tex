@@ -1,0 +1,348 @@
+\RequirePackage{fix-cm}
+\documentclass[a4paper,10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\usepackage{tabularx}
+\usepackage{array}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{microtype}
+
+\usepackage{titlesec}
+\usepackage{ragged2e}
+\usepackage{helvet}
+\usepackage{tikz}
+\usepackage{fontawesome5}
+
+\renewcommand{\familydefault}{\sfdefault}
+
+% ============================================================
+% MARGINS
+% ============================================================
+
+\geometry{
+  top=0.09cm,
+  bottom=0.42cm,
+  left=0.95cm,
+  right=0.95cm
+}
+
+\pagestyle{empty}
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+% ============================================================
+% LISTS
+% ============================================================
+
+\setlist[itemize]{
+  leftmargin=1.05em,
+  itemsep=0pt,
+  topsep=0.3pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+\linespread{0.95}
+
+% ============================================================
+% COLORS
+% ============================================================
+
+\definecolor{sectionline}{RGB}{105,129,145}
+\definecolor{textgray}{RGB}{45,45,45}
+
+% ============================================================
+% LINKS
+% ============================================================
+
+\hypersetup{
+  colorlinks=true,
+  urlcolor=black,
+  linkcolor=black,
+  pdfborder={0 0 0}
+}
+
+% ============================================================
+% SECTIONS
+% ============================================================
+
+\titleformat{\section}[block]
+  {\normalsize\bfseries\raggedright}
+  {}{0pt}{\MakeUppercase}
+  [
+    {\vspace{-0.9ex}
+    {\color{sectionline}\rule{\linewidth}{0.55pt}}
+    \vspace{-0.55ex}}
+  ]
+
+\titlespacing*{\section}
+  {0pt}
+  {0.2pt}
+  {0pt}
+
+% ============================================================
+% COMMANDS
+% ============================================================
+
+\newcommand{\cvprofile}[1]{%
+  #1\par
+}
+
+\newcommand{\eduentry}[3]{%
+  \noindent
+  \begin{tabularx}{\linewidth}{@{}X r@{}}
+    {\bfseries #1} & {\bfseries #3}\\[-0.5pt]
+    {\itshape #2} &
+  \end{tabularx}
+  \vspace{-0.1pt}
+}
+
+\newcommand{\projectentry}[3]{%
+  \noindent
+  \textbf{#1}\hfill\textbf{#2}\par
+  #3\par
+  \vspace{0.3pt}
+}
+
+\newcommand{\skillline}[2]{%
+  \textbf{#1:} #2\par
+}
+
+% ============================================================
+% DOCUMENT
+% ============================================================
+
+\begin{document}
+
+\enlargethispage{1.5\baselineskip}
+
+\color{textgray}
+\fontsize{9.5pt}{11.25pt}\selectfont
+
+% ============================================================
+% HEADER
+% ============================================================
+
+\noindent
+\begin{minipage}[c]{0.17\linewidth}
+  \centering
+\includegraphics[
+    width=1.15\linewidth,
+    height=2.8cm,
+    keepaspectratio
+]{anaaaa-Photoroom.jpg}
+\end{minipage}
+\hspace{0.012\linewidth}
+\begin{minipage}[c]{0.79\linewidth}
+
+  \centering
+
+  {\rmfamily\bfseries
+  \fontsize{20pt}{22pt}\selectfont
+  RANIA OULMIDI \par}
+  \vspace{1.5pt}
+
+  {\rmfamily\bfseries
+  \fontsize{10pt}{12.2pt}\selectfont
+  ENGINEERING STUDENT -- AI \& DATA SCIENCE\par}
+
+  \vspace{2.5pt}
+
+  {\fontsize{7.9pt}{9pt}\selectfont
+  National \& International Mobility
+  \;|\;
+ Rania.Oulmidi@emsi-edu.ma
+  \;|\;
+   +212 641-89-79-88
+  \;|\;
+  \href{https://www.linkedin.com/in/rania-oulmidi-ojd48}{LinkedIn: Oulmidi Rania}\par}
+
+\end{minipage}
+
+\vspace{2pt}
+\phantom{\rule{\linewidth}{0.9pt}}\par
+% ============================================================
+% PROFILE
+% ============================================================
+
+\section{Profile}
+
+\cvprofile{
+5th-year engineering student in Artificial Intelligence \& Data Science at EMSI Tangier, seeking a 6-month end-of-studies internship (PFE) starting January 2027, with an interest in opportunities in AI/Data or SAP SD/MM.
+}
+
+% ============================================================
+% EDUCATION
+% ============================================================
+\vspace{1.5pt}
+\section{Education}
+
+\eduentry
+{Moroccan School of Engineering Sciences (EMSI) -- Tangier, Morocco}
+{Computer Engineering \& Networks -- AI \& Data Science Track}
+{2022 -- 2027}
+
+\eduentry
+{Mohammed VI High School -- Oujda, Morocco}
+{Baccalaureate, Physics and Chemistry Track, French Option}
+{2021 -- 2022}
+
+\section{Professional Experience}
+\textbf{AI \& Data Intern --  Office Chérifien des Phosphates (OCP), Morocco }
+\hfill
+\textbf{Jul -- Aug 2026}\par
+\vspace{3pt}
+Project:
+\textbf{Intelligent Platform for Network Incident Capitalization, Monitoring and Resolution Support }\par
+
+\begin{itemize}[label=\textbullet]
+
+\item Scoped requirements and built a full-stack web platform based on a RAG architecture, integrating hybrid search and a conversational assistant to propose tailored solutions.
+\item Built the analytics pipeline from Airflow to Snowflake, implemented HDBSCAN clustering, designed Power BI dashboards, and automated reporting for network activity monitoring.
+
+\end{itemize}
+
+\textbf{Stack:}
+FastAPI, React.js, PostgreSQL, ChromaDB, RAG,
+Azure OpenAI (LLM), Airflow, Snowflake,
+Power BI, HDBSCAN, Docker
+
+\vspace{2.8pt}
+\textbf{SAP Functional Consultant Intern (AMOA) -- Winbey IT, France}
+\textbf{}
+\hfill
+\textbf{Aug 2025}\par
+\vspace{3pt}
+Project:\textbf{ POS \(\rightarrow\) SAP Integration -- L'Oréal / AESOP Canada}
+\begin{itemize}[label=\textbullet]
+\item POS -> SAP integration: designed and validated interface files to ensure consistent integration of sales,
+payments and consignment stock movements, for the client
+L'Oréal, as part of the opening of an AESOP store
+in Canada.
+
+\item
+Consignment flow integration: integrated the 4 flows
+Fill-Up, Issue, Return, Pick-Up into SAP, qualified functional and technical
+anomalies, and tracked corrections and updates.
+\end{itemize}
+
+% ============================================================
+% ACADEMIC PROJECTS
+% ============================================================
+\vspace{1.5pt}
+\section{Academic Projects}
+
+\projectentry
+{Design and Development of an Intelligent Network Intrusion Detection and Alert Generation System}
+{2026}
+
+\begin{itemize}[label=\textbullet]
+\item {Conducted exploratory analysis and preprocessing of the CIC-IDS2017 dataset (3.1M network flows across 15 classes)}
+\item {Trained and evaluated Machine Learning \& Deep Learning models for network threat detection and classification
+\item Integrated a real-time processing pipeline with Kafka and Spark Structured Streaming
+\end{itemize}
+
+\textbf{\textit{Stack:}} Random Forest, XGBoost and CNN-BiLSTM-Transformer, Kafka, Spark Structured Streaming, MongoDB, Streamlit, Docker
+}\par
+\vspace{2.8pt}
+\projectentry
+{Development of an Intelligent Semantic Matching Platform Between Resumes and Job Postings}
+{2026}
+
+\begin{itemize}[label=\textbullet]
+\item Built a semantic search engine for resumes/job postings based on embeddings and pgvector, with candidate ranking
+
+\item {Designed a RAG-based conversational assistant using a local LLM (Llama 3) to support the recruiter
+
+\item Full-stack development of the application, with a FastAPI backend and a front end
+\end{itemize}
+
+\textbf{\textit{Stack:}}
+FastAPI, PostgreSQL, pgvector, Ollama, RAG, React, TypeScript, Docker, ngrok
+}\par
+\vspace{2.8pt}
+\projectentry{Intelligent Analysis of Human Microbiome DNA}{2026}
+
+
+\begin{itemize}[label=\textbullet]
+  \item Configured a Hadoop cluster and developed a MapReduce pipeline for genomic data analysis.
+  \item Developed a Random Forest validation model and visualized clusters through an interactive dashboard.
+\end{itemize}
+
+\textbf{\textit{Stack:}}
+Python, Hadoop, HDFS, MapReduce, YARN, Docker, scikit-learn, Pandas, Matplotlib, Plotly
+\end{itemize}
+
+% ============================================================
+% TECHNICAL SKILLS
+% ============================================================
+\vspace{1.5pt}
+\section{Technical Skills}
+
+\skillline{Languages}
+{Python, Java}
+
+\skillline{Databases}
+{PostgreSQL, MySQL, SQL Server,
+ MongoDB, Neo4j, Redis, ChromaDB}
+
+
+\skillline{Machine Learning \& Deep Learning}
+{Pandas, NumPy, Matplotlib, Seaborn, Scikit-learn, PyTorch, TensorFlow}
+
+\skillline{NLP \&  Generative AI}
+{NLP, NLTK, TF-IDF, Prompt Engineering, RAG, LLM, Azure OpenAI}
+
+
+\skillline{Data Engineering \&  Big Data}
+{ETL Pipelines, Hadoop, Apache Airflow, Kafka, Airbyte}
+\skillline{DevOps \& Tools}
+{Docker, Azure, Git/GitHub }
+\skillline{Project Management \& Reporting}
+{MS Project, Power BI}
+
+
+% ============================================================
+% CERTIFICATIONS
+% ============================================================
+\vspace{1.5pt}
+\section{Certifications}
+
+AI for You, \textbf{Oracle University} | Data Analytics Job Simulation, \textbf{Deloitte} | Introduction to Big Data, \textbf{UC San Diego}
+
+ \par
+
+ Introduction to NoSQL Databases, \textbf{IBM}  | Introduction to Machine Learning, \textbf {Duke University}
+
+
+
+% ============================================================
+% INTERESTS
+% ============================================================
+\vspace{1.5pt}
+\section{Interests}
+
+\textbf{EMSI Ambassador: }school representative \hfil \textbf{Swimming:} competitive athlete
+
+\textbf{Deputy Head of Fundraising \& Project Research Officer }-- ENACTUS EMSI.
+
+
+% ============================================================
+% LANGUAGES
+% ============================================================
+\vspace{1.5pt}
+\section{Languages}
+\textbf{English:}  \textbf{EF SET English Certificate:}
+74/100 (C2 Proficient) \hfill
+\textbf{French:} Bilingual \hfill
+\textbf{Arabic}: Native language
+
+
+\end{document}
